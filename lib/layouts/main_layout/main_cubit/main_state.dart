@@ -8,14 +8,20 @@ class GetDataFailureState extends MainStates {
   final String error;
   GetDataFailureState(this.error);
 }
-// Remove Data States
-class RemoveDataSuccessState extends MainStates {}
-class RemoveDataLoadingState extends MainStates {}
-class RemoveDataFailureState extends MainStates {}
+// Delete Data States
+class DeleteDataSuccessState extends MainStates {}
+class DeleteDataLoadingState extends MainStates {}
+class DeleteDataFailureState extends MainStates {
+    final String error;
+    DeleteDataFailureState(this.error);
+}
 // Insert Data States
 class InsertDataSuccessState extends MainStates {}
 class InsertDataLoadingState extends MainStates {}
-class InsertDataFailureState extends MainStates {}
+class InsertDataFailureState extends MainStates {
+   final String error;
+  InsertDataFailureState(this.error);
+}
 // Update Data States
 class UpdateDataSuccessState extends MainStates {}
 class UpdateDataLoadingState extends MainStates {}
